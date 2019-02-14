@@ -1,6 +1,6 @@
 import { SAVE_COMMENT } from './types'
 
-export default function saveComment(comment) {
+export function saveComment(comment) {
     return {
         type: SAVE_COMMENT,
         payload: comment
