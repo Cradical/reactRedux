@@ -21,8 +21,6 @@ class CommentList extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log('mapState: ', state)
-    console.log('state.comments: ', state.comments)
     return { comments: state.comments }
 }
 
