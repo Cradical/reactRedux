@@ -19,6 +19,11 @@ beforeEach(() => {
 })
 
 it('creates one LI per comment', () => {
-    console.log('test_output: ', wrapper.find('li').length)
+    expect(wrapper.find('li').length).toEqual(2)
+})
+
+it('shows text for each comment', () => {
+    expect(wrapper.render().text()).toContain('Comment 1')
+    expect(wrapper.render().text()).toContain('Comment 2')
 })
   
